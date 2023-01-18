@@ -1,0 +1,19 @@
+{
+  "name": "jakari",
+  "version": "1.0.0",
+  "description": "Pre-Entregas Coder House\r JAKARI es un ecosistema creado para facilitar la transición al veganismo y crear un nuevo espacio de consciencia para actuar en concordancia con el mundo que nos rodea,\r de esta manera creamos nuestro sitio web y nuestra app para que todos tengan al alcance de su mano la posibilidad de marcar el cambio.\r #### Acá se encuentra el repositorio del sitio en conjunto con su HTML y su CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": 
+"node-sass --include-path scss scss/estilo.scss css/estilo.css",
+"watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
+
