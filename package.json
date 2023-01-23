@@ -5,15 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": 
-"node-sass --include-path scss scss/estilo.scss css/estilo.css",
-"watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "build-css": "node-sass --include-path scss scss/estilo.scss css/estilo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^8.0.0",
     "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
   }
 }
-
