@@ -1,22 +1,12 @@
-
-
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "./home/header";
 @import "./home/main";
+@import "./home/aside";
 @import "./home/footer";
 
-main {
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
-  // #bienvenida {
-  //   background-color: red;
-  // }
-  // #aside  {
-  //   background-color: blue;
-  // }
  }
 
 // Medium devices (tablets, 768px and up)
