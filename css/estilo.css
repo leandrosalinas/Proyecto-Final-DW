@@ -4,6 +4,7 @@
    * Copyright 2011-2022 Twitter, Inc.
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
+@import url(./_variables.scss);
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -8384,9 +8385,6 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-header {
-  background-color: white; }
-
 .container,
 .container-fluid,
 .container-sm,
@@ -8402,19 +8400,17 @@ header {
   margin-right: auto;
   margin-left: auto; }
 
-#span {
-  padding-right: 48px; }
+.nav__color {
+  background-color: #3C2257 !important;
+  font-family: "Montserrat"; }
 
-#nav {
-  background-color: #3C2257 !important; }
-  #nav a {
-    color: #FEFDFD;
-    font-size: 18px; }
-  #nav a:hover {
-    color: #B1AEBB; }
-
-.text-primary {
-  color: #FEFDFD !important; }
+.navbar {
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0.5rem;
+  --bs-navbar-color: #B1AEBB;
+  --bs-navbar-hover-color: #FEFDFD;
+  --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
+  --bs-navbar-active-color: #FEFDFD; }
 
 .btn-outline-success {
   --bs-btn-color: #B1AEBB ;
@@ -8436,24 +8432,74 @@ header {
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
   font-size: var(--bs-navbar-toggler-font-size);
   line-height: 1;
-  color: #FEFDFD;
+  color: transparent;
   background-color: transparent;
   border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
   border-radius: var(--bs-navbar-toggler-border-radius);
   transition: var(--bs-navbar-toggler-transition); }
 
-.card-img,
-.card-img-top,
-.card-img-bottom {
-  width: 400px;
-  height: 400px; }
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: var(--bs-navbar-toggler-icon-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%; }
 
-.card {
-  transition: all 0.3s; }
+.carousel-inner {
+  width: 100%;
+  height: 100%; }
 
-.card:hover {
-  transform: scale(1.1); }
+.carousel-inner img {
+  filter: brightness(0.5); }
 
-.div col {
-  max-width: 400px;
-  max-height: 400px; }
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.carousel-caption h1, .carousel-caption .h1 {
+  font-size: 500%;
+  text-shadow: 10px 10px 10px #000;
+  font-weight: 400; }
+
+#ultimocarousel {
+  font-size: 300%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.padding {
+  padding-bottom: 2rem; }
+
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem; }
+
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem; }
+
+#flower {
+  color: #5C3EB3; }
+
+#sunrise {
+  color: #5C3EB3; }
+
+#yinyang {
+  color: #5C3EB3; }
+
+#flower, #sunrise, #yinyang {
+  width: 10vh;
+  height: 10vh;
+  margin: 1rem; }
+
+head, body {
+  width: 100%;
+  height: 100%;
+  color: #222; }
