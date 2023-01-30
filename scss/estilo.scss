@@ -1,4 +1,3 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
 @import url(./_variables.scss);
 @import "./home/header";
 @import "./home/main";
@@ -11,15 +10,52 @@ head,body {
   color: #222;  
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
-
- }
-
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
+  .carousel-caption {
+ 
+    top: 45%;
+   
+}
 
- }
+.carousel-caption h1 {
+    font-size: 350%;
+ 
+}
+}
+.display-4 {
+  font-size: 200%;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 300px) {
+  
+  .carousel-caption {
+ 
+    top: 40%;
+   
+}
+
+.carousel-caption h1 {
+    font-size: 250%;
+ 
+}
+
+.display-4 {
+  font-size: 110%;
+}
+.carousel-indicators {
+  display: none
+}
+.display-4 {
+  font-size: 2em;
+  padding: .7em;
+}
+
+
+}
+
+
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
